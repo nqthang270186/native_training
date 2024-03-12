@@ -1,13 +1,13 @@
 //
-//  NativeTrainingUITestsLaunchTests.swift
-//  NativeTrainingUITests
+//  testUITestsLaunchTests.swift
+//  testUITests
 //
-//  Created by nguyen quoc thang on 05/03/2024.
+//  Created by DKI on 05.03.2024.
 //
 
 import XCTest
 
-final class NativeTrainingUITestsLaunchTests: XCTestCase {
+final class testUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

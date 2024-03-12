@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  NativeTraining
+//  test
 //
-//  Created by nguyen quoc thang on 05/03/2024.
+//  Created by DKI on 05.03.2024.
 //
 
 import UIKit

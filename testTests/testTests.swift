@@ -1,14 +1,14 @@
 //
-//  NativeTrainingTests.swift
-//  NativeTrainingTests
+//  testTests.swift
+//  testTests
 //
-//  Created by nguyen quoc thang on 05/03/2024.
+//  Created by DKI on 05.03.2024.
 //
 
 import XCTest
-@testable import NativeTraining
+@testable import test
 
-final class NativeTrainingTests: XCTestCase {
+final class testTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
