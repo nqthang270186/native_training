@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Popup" customModule="swift_learning" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Popup" customModule="NativeTraining" customModuleProvider="target">
             <connections>
-                <outlet property="btnCancel" destination="pgJ-f2-8sD" id="mKU-tO-9Eh"/>
+                <outlet property="view" destination="1zC-bS-k5S" id="TfK-F1-fp4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Popup" customModule="swift_learning" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="1zC-bS-k5S">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -28,11 +28,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFy-Jb-dJb">
-                            <rect key="frame" x="160" y="250.99999999999994" width="85" height="39"/>
+                            <rect key="frame" x="160" y="255.66666666666671" width="85" height="34.333333333333343"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Confirm"/>
                             <connections>
-                                <action selector="confirm_onClick:" destination="-1" eventType="touchUpInside" id="GMC-KF-x4b"/>
+                                <action selector="confirmTapped:" destination="-1" eventType="touchUpInside" id="vv6-JW-1wb"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgJ-f2-8sD">
@@ -44,7 +44,7 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                             <connections>
-                                <action selector="cancel_onClick:" destination="-1" eventType="touchUpInside" id="Opz-Dq-6Gt"/>
+                                <action selector="cancelTapped:" destination="-1" eventType="touchUpInside" id="dRM-Sg-4fF"/>
                             </connections>
                         </button>
                     </subviews>
@@ -64,16 +64,13 @@
                     </constraints>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.22348001700680273" colorSpace="custom" customColorSpace="displayP3"/>
-            <accessibility key="accessibilityConfiguration">
-                <accessibilityTraits key="traits" notEnabled="YES"/>
-            </accessibility>
+            <viewLayoutGuide key="safeArea" id="AZE-eT-mHe"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70092611754966883" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Ppq-cH-Byl" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="5SV-rR-KsL"/>
-                <constraint firstItem="Ppq-cH-Byl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="lLg-hc-vWI"/>
+                <constraint firstItem="Ppq-cH-Byl" firstAttribute="centerX" secondItem="AZE-eT-mHe" secondAttribute="centerX" id="k1d-he-kaG"/>
+                <constraint firstItem="Ppq-cH-Byl" firstAttribute="centerY" secondItem="AZE-eT-mHe" secondAttribute="centerY" id="ttB-aR-C2s"/>
             </constraints>
-            <point key="canvasLocation" x="72.51908396946564" y="-12.67605633802817"/>
+            <point key="canvasLocation" x="-129" y="-700"/>
         </view>
     </objects>
     <resources>

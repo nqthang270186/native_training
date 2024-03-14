@@ -52,8 +52,9 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func search_onClick(_ sender: Any) {
-        self.popup = Popup(frame: self.view.frame)
-        self.view.addSubview(popup)
+        let detailVC = Popup(nibName: "Popup", bundle: nil)
+        detailVC.modalPresentationStyle = .overFullScreen
+        present(detailVC, animated: true)
     }
     
 }
